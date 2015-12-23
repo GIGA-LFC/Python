@@ -1,31 +1,30 @@
 
-git init
+git init ----------------gitis sheqmna
 
-sudo apt-get install git-core git-gui git-doc
+sudo apt-get install git-core git-gui git-doc------------dayeneba
 
-git clone git@github.com:username/projectname.git
+git clone git@github.com:username/projectname.git-------------gitis klonireba saitidan kompiutershi
 
-git config --global user.name "Your Name"
+git config --global user.name "Your Name"------------ avtorizacia
 
-git config --global user.email "your@email.com"
+git config --global user.email "your@email.com"-------------avtorizacia
 
-git add new_or_existing_file.c
+git add new_or_existing_file.c------------failis damateba
 
-git commit
+git commit/git commit -m "komentari"---------------cvlilebis gaketeba komentari
 
-git push origin master
-
-git fetch upstream
-
-git merge upstream/master
+git push (origin master)/ git pull--------- saitze atvirtva informaciis/chamotvirtva saitidan
 
 $ git branch
 Lists all local branches in the current repository
 $ git branch [branch-name]
 Creates a new branch
+
 $ git checkout [branch-name]
 Switches to the specified branch and updates the working directory
+
 $ git merge [branch]
 Combines the specified branch’s history into the current branch
+
 $ git branch -d [branch-name]
 Deletes the specified branch
