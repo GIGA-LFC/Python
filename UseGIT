@@ -1,0 +1,31 @@
+
+git init
+
+sudo apt-get install git-core git-gui git-doc
+
+git clone git@github.com:username/projectname.git
+
+git config --global user.name "Your Name"
+
+git config --global user.email "your@email.com"
+
+git add new_or_existing_file.c
+
+git commit
+
+git push origin master
+
+git fetch upstream
+
+git merge upstream/master
+
+$ git branch
+Lists all local branches in the current repository
+$ git branch [branch-name]
+Creates a new branch
+$ git checkout [branch-name]
+Switches to the specified branch and updates the working directory
+$ git merge [branch]
+Combines the specified branch’s history into the current branch
+$ git branch -d [branch-name]
+Deletes the specified branch
