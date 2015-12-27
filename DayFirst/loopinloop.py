@@ -1,6 +1,7 @@
 def stars(num):
 
 	for x in range(num):
+	
 		y = " - "
 		print x
 		while x>=0:
