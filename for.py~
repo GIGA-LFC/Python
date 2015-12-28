@@ -1,8 +1,0 @@
-for x in range(11):
-
-	print x
-	
-
-	y = 'bla'
-	print y
-print y
