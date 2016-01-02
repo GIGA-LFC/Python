@@ -1,7 +1,7 @@
 raspberry- am platis gamoyenebisas Tu piTonSi vaprogramebT saWiroa raspberis 
-gacnoba programistvis rasac:  import RPi.GPIO as GPIO -es brZaneba asrulebs,
- rac gulisxmobs raspberis pinebis gacnobas programistvis. shemdegi etapia 
-tu ra saxit mivmarTavT pinebs esenia:
+gacnoba programistvis rasac:  --------  import RPi.GPIO as GPIO -------- es brZaneba asrulebs,
+rac gulisxmobs raspberis pinebis gacnobas programistvis. shemdegi etapia 
+tu ra saxit mivmarTavT pinebs, esenia:
 
 # for GPIO numbering, choose BCM  
 GPIO.setmode(GPIO.BCM)  
@@ -13,7 +13,7 @@ rodesac BCM s viyenebt es nishnavs rom pinebs mivmartavt saxelebit
 xolo BOARD -s shemtxvevashi pinebs mivmartavt tavianti nomrebis mixedvit
 yvela pins aqvs saxeli da nomeri.
 
-GPIO.setup(25, GPIO.IN) am brZanebit 25-e pins vratv inpormaciis miRebis reJimSi
+GPIO.setup(25, GPIO.IN) am brZanebit 25-e pins vratv inpormaciis miRebis/naxvis reJimSi
 
 GPIO.input(25) es iRebs mniSvnelobas true an folse (if port 25 == 1) anu Cven am brZanebiT vkiTxulobT 
 konkretul pinze arsebul inpormacias
@@ -21,10 +21,12 @@ konkretul pinze arsebul inpormacias
 GPIO.cleanup()  asrulebs gasuftavebas tu rame informacia gvqonda an gvaqvs gashvebuli pinze.
 
 damatebit tu programis dasrulebisTanave gvinda gasufTavdes pinebze informacia ZiriTadad 
-keTdeba try: except: brZanebit rac iwereba ase: try: shi vwer CvenTvis saWiro informacias xolo
-except: -Si 
+keTdeba try: except: brZanebit rac iwereba ase: 
+
+try: shi vwer CvenTvis saWiro informacias xolo
+except: # -Si tu raime ise ar moxdeda rogorc gvsurs 
 	except KeyboardInterrupt: 
 	GPIO.cleanup() 
-programis msvlelobisas xeliT klaviaturidan meqanikurad Sewyvetas(ctrl+c) am SemtxvevaSI 
+programis msvlelobisas xeliT klaviaturidan meqanikurad Sewyvetas(mag: ctrl+c) am SemtxvevaSI 
 KeyboardInterrupt (niSnavs klaviaturiT Sewyvetas programis msvlelobis)-s
 mimarTavs programa da asufravebs pinze arsebul informacias

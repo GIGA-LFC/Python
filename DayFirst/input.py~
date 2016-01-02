@@ -6,4 +6,4 @@ print a,b
 
 a= raw_input('dawere rame:  ')
 
-print  "---",a
+print a
