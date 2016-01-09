@@ -11,9 +11,11 @@ filename = input("filename: ")
 with open(filename) as f:
 	text = f.read()
 
-for char in "qwertyuioplkjhgfdsazxcvbnm":
-	perc = (100 * cchar(text,char))/len(text)
-	print "{0}---{1}%".format(char,round(perc,2))
-	a = 0	
-	a = a+perc	
-print a
+a= 0
+
+for char in "qwertyuioplkjhgfdsazxcvbnm ":
+	perc = (100 * cchar(text,char))/len(text)	
+	a = a+perc
+	print "{0}---{1}%".format(char,round(perc,2)) # to reduce the number of digits printed
+		
+print a 
