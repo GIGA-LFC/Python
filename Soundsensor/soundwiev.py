@@ -6,8 +6,10 @@ import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(3, GPIO.IN)
+GPIO.setup(7, GPIO.IN)
 
 
-GPIO.input(3)
+for i in range(100)
+	a = GPIO.input(7) #// Reads the value from the Analog PIN A0
+	print a
 print "voice"
