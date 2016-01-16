@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-import RPi.GPIO as GPIO, time
+import RPi.GPIO as GPIO, time, os
 
 DEBUG = 1
 GPIO.setmode(GPIO.BCM)
