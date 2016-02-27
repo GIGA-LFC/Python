@@ -8,11 +8,12 @@ def RCtime (RCpin):
         GPIO.setup(RCpin, GPIO.OUT)  
         GPIO.output(RCpin, GPIO.LOW)  
         time.sleep(0.1)  
-  
+	print "****",GPIO.input(11), "****"  
         GPIO.setup(RCpin, GPIO.IN)  
         while (GPIO.input(RCpin) == GPIO.LOW):  
-                reading += 1  
-        return reading  
+                reading += 1
+		print "----", GPIO.input(11), "----" 
+        return "@@@@",reading,  "@@@@"
   
 while True:                                       
         print RCtime(11)  
